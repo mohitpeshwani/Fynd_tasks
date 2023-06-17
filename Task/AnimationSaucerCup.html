@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body
+    {
+        margin: 0;
+        padding:0;
+        background-image: linear-gradient(to left,#FF9933, #FFFFFF , #138808 );
+        border-radius: 50%;
+        background-size:contain ;
+        margin-top: 120px;
+        
+    }
+    .bubble-flex
+    {
+        display: flex;
+        flex-direction:column;
+        align-items:center;
+        justify-content:center;
+        height: 50%;
+        width: 100%;
+        
+
+    }
+    .flex-container{
+    
+        display: flex;
+        margin-left: auto;
+        align-content: center;
+        right:500px;
+        justify-content:center;
+    }
+
+    .base-container
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .base
+    {   
+       border-bottom-left-radius: 180px;
+       border-bottom-right-radius: 180px;
+       width: 25rem;
+       height: 5rem;
+       background: radial-gradient(circle,#FF9933,#FFFFFF,#138808);
+       box-shadow: 5px 5px lightgrey;
+
+    }
+    .mug
+    {
+        /*background: linear-gradient(to bottom right,white 50%,lightgrey 50%); */
+        background-image: url(download.jfif);
+        background-size: cover;
+        height: 300px;
+        margin-left: 4rem;
+        width:300px;
+        border-bottom-left-radius: 120px;
+        border-bottom-right-radius: 120px; 
+    }
+    .handle
+    {
+        height:90px;
+        width:50px;
+        border-top-right-radius: 50px;
+        border-bottom-right-radius: 50px;
+        border-right: 25px solid white;
+        border-top:45px solid white ;
+        border-bottom: 45px solid white;
+        border-top-color: #FF9933;
+        border-right-color:#FFFFFF ;
+        border-bottom-color:#138808 ;
+
+    }
+
+    .wheel {
+        height: 43px;
+        width: 43px;
+        border: 1px solid darkblue;
+        border-radius: 45px;
+        position: relative;
+        margin: 0 auto
+    }
+     
+    .wheel .line {
+        height: 100%;
+        width: 1px;
+        display: inline-block;
+        position: absolute;
+        left: 50%;
+        background: darkblue;
+    }
+
+    .tea
+    {
+        width: 120px;
+        height: 5px;
+        background-color: RGB(198,240,179);
+    }
+    
+    .bubble1
+    {
+        animation-name:bubble2;
+        animation-iteration-count: infinite;
+        animation-duration: 10s;
+        background-color: white;
+        border-radius: 50px;
+        width:40x;
+        height: 40px;
+        animation-timing-function: linear;
+        animation-delay: 1s;
+        margin-bottom: 3px;
+    }
+    .bubble2
+    {
+        animation-name:bubble2;
+        animation-iteration-count: infinite;
+        animation-duration: 9s;
+        animation-timing-function:linear;
+        animation-delay:2s;
+        background-color: white;
+        border-radius: 50px;
+        width:34px;
+        height: 34px;    
+    }
+    .bubble3
+    {        
+        animation-name:bubble2;
+        animation-iteration-count: infinite;
+        animation-duration:8s;
+        animation-timing-function:linear;
+        animation-delay: 1s;
+        background-color: white;
+        border-radius: 50px;
+        width:30px;
+        height: 30px; 
+
+    }
+    
+    .bubble4    
+    {
+    animation-name:bubble2;
+    animation-iteration-count: infinite;
+    animation-duration:7s;
+    background-color: white;
+    border-radius: 50px;
+    animation-delay:1s;
+    width:28px;
+    height: 28px; 
+    }
+
+    .bubble5
+    {
+        animation-name:bubble1;
+        animation-iteration-count: infinite;
+        background-color: white;
+        border-radius: 50px;
+        width:25px;
+        height: 25px; 
+        animation-delay: 1s;
+        animation-duration:4s;
+    }
+
+    .bubble5
+    {
+        animation-name:bubble2;
+        animation-iteration-count: infinite;
+        background-color: white;
+        border-radius: 50px;
+        width:20px;
+        height: 20px; 
+        animation-delay: 1s;
+        animation-duration: 5s;
+    }
+
+    .bubble6
+    {
+        animation-name:bubble1;
+        animation-iteration-count: infinite;
+        background-color: white;
+        border-radius: 50px;
+        width:15px;
+        height: 15px; 
+        animation-delay: 800ms;
+        animation-duration:4s;
+    }
+
+    .bubble7
+    {
+        animation-name:bubble2;
+        animation-iteration-count: infinite;
+        background-color: white;
+        border-radius: 50px;
+        width:10px;
+        height: 10px; 
+        animation-delay: 500ms;
+        animation-duration: 3s;
+    }
+
+
+
+    @keyframes bubble1 
+            {          
+                0%{background-color: white;transform: translate(0px,0px);}
+                5%{background-color: white;transform: translate(0px,0px);}
+                10%{background-color: white; opacity:93%; transform: translateY(-11px) scaleX(2) }
+                20%{background-color: white; opacity:85%; transform:translateY(-25px) scaleX(2)}
+                30%{background-color: white; opacity:72%; transform:translateY(-40px) scaleX(1) scaleY(2)}
+                40%{background-color: white; opacity:61%; transform:translateY(-54px) scaleX(1) scaleY(2)}
+                50%{background-color: white; opacity:52%; transform:translateY(-70px) scaleX(2) scaleY(1.25)}
+                60%{background-color: white; opacity:43%; transform:translateY(-90px) scaleX(2) scaleY(1.25)}
+                70%{background-color: white; opacity:32%; transform:translateY(-100px) scaleX(1.75) scaleY(2)}
+                80%{background-color: white; opacity:21%; transform: translateY(-120px) scaleX(2) scaleY(2)}
+                90%{background-color: white; opacity:15%; transform: translateY(-150px) scaleX(2) scaleY(2)}
+                100%{background-color: white; opacity:2%; transform:translateY(-200px) scaleX(2) scaleY(2)}       
+        }
+     @keyframes bubble2
+        {
+            0%{background-color: white;transform: translate(0px,0px);}
+            10%{background-color: white; opacity:90%; transform: translateY(-11px) scale(1.25,1.25);}
+            20%{background-color: white; opacity:80%; transform:translateY(-38px) scale(1.50,1.50)}
+            30%{background-color: white; opacity:70%; transform:translateY(-58px) scale(1.75,1.75)}
+            40%{background-color: white; opacity:60%; transform:translateY(-78px) scaleY(2,2)}
+            50%{background-color: white; opacity:50%; transform:translateY(-90px) scale(2.1,2)}
+            60%{background-color: white; opacity:40%; transform:translateY(-102px) scale(2.25,2)}
+            70%{background-color: white; opacity:30%; transform:translateY(-120px) scale(2.30,2)}
+            80%{background-color: white; opacity:20%; transform: translateY(-132px) scale(2.32,2)}
+            90%{background-color: white; opacity:10%; transform: translateY(-154x) scaleX(2.35,2.1)}
+            100%{background-color: white; opacity:1%; transform:translateY(-159px) scaleY(2.40,2.1)}
+
+        } 
+        .line:nth-child(1) {
+            transform: rotate(15deg)
+        }
+         
+        .line:nth-child(2) {
+            transform: rotate(30deg)
+        }
+         
+        .line:nth-child(3) {
+            transform: rotate(45deg)
+        }
+         
+        .line:nth-child(4) {
+            transform: rotate(60deg)
+        }
+         
+        .line:nth-child(5) {
+            transform: rotate(75deg)
+        }
+         
+        .line:nth-child(6) {
+            transform: rotate(90deg)
+        }
+         
+        .line:nth-child(7) {
+            transform: rotate(105deg)
+        }
+         
+        .line:nth-child(8) {
+            transform: rotate(120deg)
+        }
+         
+        .line:nth-child(9) {
+            transform: rotate(135deg)
+        }
+         
+        .line:nth-child(10) {
+            transform: rotate(150deg)
+        }
+         
+        .line:nth-child(11) {
+            transform: rotate(165deg)
+        }
+         
+        .line:nth-child(12) {
+            transform: rotate(180deg)
+        }
+        
+
+
+</style>
+<body>
+    <div class="bubble-flex" style="margin-bottom: 30px;">
+        <div class="bubble1">
+            <div class="wheel">
+                <span class="line"></span>
+                <span class="line"></span>
+                <span class="line"></span>
+                <span class="line"></span>
+                <span class="line"></span>
+                <span class="line"></span>
+                <span class="line"></span>
+                <span class="line"></span>
+                <span class="line"></span>
+                <span class="line"></span>
+                <span class="line"></span>
+                <span class="line"></span>
+            </div>
+            
+        </div>
+        <div class="bubble2">
+            
+
+            <div class="bubble3"></div>
+            <div class="bubble4"></div>
+        </div> 
+        </div>
+        
+
+    </div>
+    <div class="flex-container">
+        <div class="mug"></div>
+        <div class="handle"></div> 
+    </div>
+    <div class="base-container">
+        <div class="base">
+
+            <h1 style="text-align: center; color:darkblue;  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif">Unity In Diversity</h1>
+            <br>
+        </div>
+        
+    </div>
+
+
+    
+</body>
+</html>

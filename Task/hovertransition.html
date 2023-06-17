@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+    <style>
+        .box{
+            height: 1080px;
+            width: 100%;
+            transition: all 0.1s linear;
+
+        }
+        .linear
+        {
+            display: block;
+            background-color: aqua;
+            height: 100px;
+            width: 440px;
+            transition: all 1s linear;
+        }
+        
+         .ease-in-out
+        {
+            display: block;
+            background-color: aquamarine;
+            height: 100px;
+            width: 440px;
+            transition: all 2s ease-in-out;
+        }
+        
+        .ease-in
+        {
+            display: block;
+            background-color: aqua;
+            height: 100px;
+            width: 440px;
+            transition: all 2s ease-in;
+        }
+
+        .ease-out
+        {
+            display: block;
+            background-color: aqua;
+            height: 100px;
+            width: 440px;
+            transition: all 2s ease-out;
+            
+        }
+
+        .box:hover :where(.linear,.ease-in,.ease-in-out,.ease-out) 
+        {
+            width: 100%;
+        }
+        
+        
+    </style>
+<body>
+    <section class="box">
+    <div class="linear"><p>Home</p></div>
+    <div class="ease-in"><p>About</p></div>
+    <div class="ease-in-out"><p>contact us</p> </div>
+    <div class="ease-out"><p>Story</p></div>
+</section>
+
+    
+</body>
+</html>

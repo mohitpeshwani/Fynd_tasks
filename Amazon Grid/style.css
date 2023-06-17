@@ -1,0 +1,164 @@
+*
+{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body
+{
+    background-color: white;
+    margin: 0.1rem;
+   
+}
+
+.header
+{
+    padding-top: 1rem;
+    padding-left: 1rem;
+    height: 110px;
+    
+    background-color: #122234;
+    display: grid;
+    grid-template-areas: 
+    'navLogo location search  search lang  hello returns cart';
+    justify-content:safe;
+
+}
+
+#navLogo
+{
+width: 5rem;
+height: 2rem;
+margin-left: 1rem;
+margin-top: 2rem;
+}
+
+#location
+{
+    grid-area: location;
+    margin: 0.2rem;
+
+}
+
+#search
+{
+
+    display: grid;
+    grid-template-rows: repeat(3, minmax(0, 1fr));
+    justify-content:flex-start;
+    grid-template-columns: auto auto auto;
+}
+
+#lang
+{
+    grid-area: lang;
+    grid-template-columns: auto auto auto;
+}
+
+#hello
+{
+    grid-area: hello;
+    color:white
+}
+#returns
+{
+    grid-area: returns;
+    color: white;
+}
+#cart
+{
+    grid-area:cart;
+    color:white;
+    justify-content:flex-start;
+}
+.nav
+{
+    display: grid;
+    background-color: rgb(15, 17, 17);
+    height: 35px;
+    grid-template-areas: 'right left' ;
+    color: white;
+    
+
+
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+#right{
+    text-decoration: none;
+    color:white;
+    justify-content: center;
+    display: grid;
+
+}
+
+#left{
+    padding-top: 3px;
+    padding-left: 10px;
+    text-decoration: none;
+    color:white;
+    display: grid;
+    /* justify-content: baseline; */
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+
+}
+
+#screen
+{
+    background-image: url(https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Events/2021/FathersDay/Fuji_LPHero_FD21_en_US.jpg);
+    height: 15rem;
+}
+
+#subgrid
+{
+    display: grid;
+    gap: 3rem;
+    background-color: white;
+    
+    grid-template-areas:
+
+    "sub sub sub sub"
+
+    "sub sub sub sub"
+
+    "sub sub sub sub"
+    "shop shop shop shop";
+}
+
+.sub
+{
+    
+    width:300px;
+    height: 300px;
+    
+}
+
+#footer
+{
+    margin-top: 3rem;
+    padding-top: 2rem;
+    padding-left: 1rem;
+    background-color:#122234 ;
+    display: grid;
+    justify-content:space-around;
+    gap: 1rem;
+    grid-template-areas:
+     'auto auto auto auto';
+    color:white;
+}
+
+ul li
+{
+    list-style-type: none;
+    margin-top: 10px;
+}
+.line
+{
+    grid-area: line;
+    height: px;
+    background-color: white;
+    width: 100%;
+}
